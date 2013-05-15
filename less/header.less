@@ -1,0 +1,40 @@
+header  {
+	position: relative;
+	background-color: @navColor;
+	height: @headerHeight;
+
+
+
+
+	h1 {
+		position: relative;
+		top: 2.5px;
+		left: 50px;
+		float: left;
+
+		font-size: 45px;
+		color:#ffffff;
+		font-family: 'Amatic SC', cursive;
+		opacity: .9;
+		letter-spacing: 1.5px;
+	}
+
+
+
+
+}
+//need to have the only screen and (max-width : ) to be able to test in browser
+ @media only screen and (max-device-width : @smallSmartPhone), only screen and (max-width : @smallSmartPhone) {
+
+	 header {
+		 height: 70px;
+
+
+
+
+	 h1{
+		 display:  none;
+
+	 }
+	 }
+}
